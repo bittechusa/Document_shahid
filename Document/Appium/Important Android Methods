@@ -1,0 +1,235 @@
+How to use UISelector in Android:
+
+1. To use resourceTo()
+ dr.findElementByAutomator("UiSelector().resourseTo(\value\")").click()
+
+2. To use className()
+  dr.findElementByAutomator("UiSelector().className(\"value\")").click()
+
+3.To use checkable()
+  dr.findElementByAutomator("UiSelector().checkable(\"value\")").click() 
+
+4.To use text()
+  dr.findElementByAutomator("UiSelector().text(\value\")").click() 
+
+5.To use textContains()
+  dr.findElementByAutomator("UiSelector().textContains(\value\")").click()
+
+6.To use textStartWith()
+  dr.findElementByAutomator("UiSelector().textStartWith(\value\")").clic()
+
+7.To use indexing:
+  dr.findElementsByAutomator("UiSelector().text(\value\")").index(number)
+
+      
+
+3. To find all elements using any of UiSelector method
+  List<WebElement> elements =  dr.findElementsByAutomator("UiSelector().resourseTo(\value\")")
+  elements.size()
+  for(WebElement ele:elements)
+  {
+    ele.click()
+    ele.getText
+  }
+
+4. To use index of elements where u have same id or another locator
+   dr.findElementsById("value").get(0).click();
+
+5.To click in any element using loop
+  List<WebElement> list=dr.findElementsById("value");
+  for(WebElement ele:list)
+  {
+    ele.click();
+  }
+
+  6. To find an element inside the container(means under one element if there are more than one element which all locator are same) using index 
+     List<WebElement> elements =  dr.findElementsByAutomator("UiSelector().resourseTo(\value\")") 
+     or
+     List<WebElement> list=dr.findElementsById("value");//any way u can find how many container u have
+
+     elements.size()
+
+     Webelement firstContainer=elements.get(0)
+     WebElement anyElementFromFirstContainer = firstContainer.findElementByXpath("value");
+     anyElementFromFirstContainer.click();
+
+    7. To find an element from list of element using compare with text of that element:
+        List<WebElement> list=dr.findElementsById("value");
+        for(WebElement ele:list)
+        {
+          if(ele.getText().equals("Text")
+          {
+            ele.click();
+            break;
+          }
+        }
+
+     8. in notes app if u have more than one note how to find that:
+     
+    	 List<WebElement> notes=dr.findElementsById("value");
+    	 WebElement note1=null;
+
+        for(WebElement ele: notes)
+        {
+          if(ele.getText().equals("note of text")
+          {
+            note1 = ele;
+            break;
+          }
+        }
+        note1.click()
+        TouchActions t=new TouchAction((MobileDriver)dr)
+        t.longPress(note1);
+        t.longPress(note1, 40000)
+
+      9. To use scrollTo method how to click on element
+
+        boolean flag=true;
+        dr.scrollTo("text").click();
+           or
+        dr.swipe(500, 1000, 500, 300, 4000)// starX,startY,endX,endY,duration
+
+        List<WebElement> title=dr.findElementsById("value");
+        while(flag)
+        {
+          for(WebElement ele: title)
+          {
+            if(ele.getText().equals("text"))
+            {
+              ele.click();
+              flag=false;
+              break;
+            }
+          }
+          if(flag=true)
+          {
+            int titleCount=title.size();
+            WebElement lastElement=title.get(titlecount-1);
+            int xInitial = lastElement.getLocation().getX() + lastElement.getSize().getWidth()/2; // to get x-coordinate
+            int yInitial = lastElement.getLocation().getY() + lastElement.getSize().getHieght()/2; //to get y-coordinate
+            dr.swipe(xInitial, yInitial, xInitial, yInitial, 400, 5000)
+          }
+        }
+
+        for(webElement ele: title)
+        {
+          syso(ele.getText());
+        }
+        dr.swipe(500, 1000, 500, 300, 4000)
+
+      10. To swipe around the screen:
+
+         syso(dr.manage().window().getSize().getWidth()) 
+         syso(dr.manage().window().getSize().getHieght())
+
+         int screenWidth = dr.manage().window().getSize().getWidth()  
+         int screenHieght = dr.manage().window().getSize().getWidth()
+         // swipe right
+         int starX = screenWidth*8/9
+         int endX = screenWidth/9
+         int startY = screenHieght/7
+         int endY = screenHieght/2
+         dr.swipe(startX, startY, endX, endY, 5000);
+         thread.sleep(3000)
+         dr.swipe(startX, startY, endX, endY, 5000);
+
+         //swipe left
+
+          int starX = screenWidth/9
+         int endX = screenWidth*8/9
+         int startY = screenHieght/2
+         int endY = screenHieght/2
+         dr.swipe(startX, startY, endX, endY, 5000);
+
+         //swipe down
+
+          int starX = screenWidth/2
+         int endX = screenWidth/2
+         int startY = screenHieght*6/7
+         int endY = screenHieght/7
+         dr.swipe(startX, startY, endX, endY, 5000);
+
+         //swipe up
+
+          int starX = screenWidth/2
+         int endX = screenWidth*8/2
+         int startY = screenHieght/6
+         int endY = screenHieght*5/6
+         dr.swipe(startX, startY, endX, endY, 5000);
+
+       11. To perform drag and drop
+       
+           WebElement drag=dr.findElementById("value");
+           WebElement drop=dr.findElementById("value");
+
+           TouchAction t=new TouchAction((MobileDriver)dr)
+           t.longPress(drag).moveTo(drag).release().perform()
+
+           String text=dr.findElementsById("value").getText();
+           if(text.equals("dropped"))
+           {
+             syso("element droped")
+           }
+           else
+             syso("not dropped")
+
+        12.To zoom and pinch
+
+             WebElement image=dr.findElementById("value");
+             dr.zoom(image)
+             int x = dr.manage().window().getSize().getWidth()/2
+             int y = dr.manage().window().getSize().getWidth()/2
+             dr.zoom(x,y)
+             dr.pinch(image)
+             int x = dr.manage().window().getSize().getWidth()/2
+             int y = dr.manage().window().getSize().getWidth()/2
+             dr.pinch(x,y)
+
+         13. to zoom and pinch using touchAction ang use finger concept
+         
+             int x = dr.manage().window().getSize().getWidth()/2
+             int y = dr.manage().window().getSize().getWidth()/2
+              TouchAction finger1=new TouchAction((MobileDriver)dr)
+              finger1.press(x, y-20).moveTo(x, y-100)
+
+               TouchAction finger2=new TouchAction((MobileDriver)dr)
+              finger2.press(x, y+20).moveTo(x, y+100)
+
+               MultiTouchAction action=new MultiTouchAction((MobileDriver)dr)
+               action.add(finger1).add(finger2).perform();
+
+               WebElement image=dr.findElementById("value");
+               int x=image.getLocation().getX()+image.getSize().getWidth()/2
+               int y=image.getLocation().getY()+image.getSize().getHight()/2
+
+               //zoom
+               TouchAction finger1=new TouchAction((MobileDriver)dr)
+               finger.press(image,x,y-20).moveTo(image,x,y-100)
+
+               TouchAction finger1=new TouchAction((MobileDriver)dr)
+               finger.press(image,x,y-20).moveTo(image,x,y+100)
+
+               MultiTouchAction action=new MultiTouchAction((MobileDriver)dr)
+               action.add(finger1).add(finger2).perform();
+
+               //pinch
+                TouchAction finger1=new TouchAction((MobileDriver)dr)
+               finger.press(image,x,y-100).moveTo(image,x,y-20)
+
+               TouchAction finger1=new TouchAction((MobileDriver)dr)
+               finger.press(image,x,y-100).moveTo(image,x,y+20)
+
+               MultiTouchAction action=new MultiTouchAction((MobileDriver)dr)
+               action.add(finger1).add(finger2).perform();
+
+
+
+
+
+
+
+
+
+
+
+

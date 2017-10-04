@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "automation",
+      "author": "asad"
+    },
+    {
+      "id": 2,
+      "title": "tesing",
+      "author": "shahidul",
+      "info": [
+      {
+        "name": "raqib",
+        "phone": "1234"
+      },
+      {
+        "name":"adnan",
+        "phone":"3421"
+      }
+      ]
+    }
+  ]
+ 
+}

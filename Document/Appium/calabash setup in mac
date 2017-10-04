@@ -1,0 +1,34 @@
+1. Install HomeBrew:
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+(brew doctor to check homebrew is installed or not)
+
+2.Install Git :
+brew install git
+
+3.Install Calabash-cucumbert:
+sudo gem install calabash-cucumber
+
+4.To create feature directory:
+calabash-ios genm  
+
+5. To see simulator
+xcrun simctl list
+
+6.Install Calabash-Android:
+sudo gem install calabash-android 
+
+7. Install bundler: 
+gem install bundler// to install all gem  at a time(gem.rb file)
+bundler uopdate// to install all gem.rb file in project
+
+8. To make app and to take calabash code into project
+xcrun instruments -w "iPhone 5 (8.0 Simulator)"// to check simulator which i have
+
+9.To create feature file in project:
+bundle exec calabash-ios gen
+
+10. To give path for app file in calabash:
+export APP=Products/app/LPSimpleExample.app
+
+11. To run:
+bundle exe cucumber 

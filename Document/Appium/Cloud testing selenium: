@@ -1,0 +1,7 @@
+Cloud testing selenium:
+
+for safari browser plain code
+but if we want to run app in sauce labs then
+download curl language for that follow the appium sauce lab documentation
+
+then export the app into sauce lab account

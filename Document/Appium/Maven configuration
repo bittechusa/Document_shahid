@@ -1,0 +1,19 @@
+Maven configuration:
+How to create a project from command line:
+go to folder label where u want to store yr maven project
+1.mvn archetype:generate
+then provide random number
+then groupId
+then ArtifactId
+then follow the prompt instruction(just hit enter ---)
+
+After creating a project pluging into eclipse:
+go to project label
+type mvn eclipse:eclipse
+
+how to run from command line:
+go to project lavel
+
+1: to run a profile: mvn test -P(profileName)
+2.
+

@@ -1,0 +1,44 @@
+***  How to install android sdk in mac **********
+
+	note: you must have to have installed java, eclipse, xcode as well
+	
+	1. open terminal:
+
+	2.install homebrew :
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	(brew doctor will help to make sure homebrewer is installed or not)
+
+	3. Brew install android-sdk
+	(if different path then:
+	export ANDROID_HOME=/usr/local/Cellar/android-sdk/24.3.3)
+	
+	4. setup environment variable or setup bash profile:
+	sudo nano ~/.bash_profile
+	export $ANDROID_HOME=/Users/shahidulislam/Library/Android/sdk
+	export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+	5. Android ADT plugin in eclipse: 
+	click help ---> new install software ---> paste below link (https://dl-ssl.google.com/android/eclipse/)----> click next and so on.
+
+==========Dafault sdk home path for MAC================:
+
+		/Users/shahidulislam/Library/Android/sdk
+
+=========To open UIAutomatorviewer in MAC==============
+
+
+	1. Open terminal: 
+	2. Go to tools file label using below command:
+	 cd Library/Android/sdk/tools
+	3. Type uiautomatoeviewer
+	4. Hit Enter
+
+
+
+
+
+
+
+
+
+

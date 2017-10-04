@@ -1,0 +1,12 @@
+how to handle hydrid app:
+
+
+driver.contextHandler();//to get both app
+driver.context("app name which one you want");//to change app
+
+
+
+
+
+//if we can not switch regular way like driver.context("web app name")
+then we have ask developer to enable in his code option is setWebcontentdebuggingEnables (called static ip in set) 

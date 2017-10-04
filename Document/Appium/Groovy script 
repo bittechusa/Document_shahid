@@ -1,0 +1,99 @@
+Groovy script syntex:
+
+def s="fghh"
+
+def sd=9
+
+log.info("")
+
+log.info("ghch"+7)
+log.info("ghjgj$9")
+
+//if condition
+if(condition)
+{
+	
+}
+else
+{
+	
+}
+
+//assert syntex
+assert 6>9
+
+//for loop
+for(def i=0;i<10;i++)
+{
+	
+}
+
+//while syntex
+def j=1;
+while(4>6)
+{
+	
+}
+
+//array:
+def a=new String[2]
+a[0]="hgh"
+a[1]="hgh"
+a.size()//to get size
+
+def t=["gdsg","fe"]//another way array
+
+//exception:
+try{
+	
+}catch(Exception e)
+{
+	
+}
+
+//ArrayList
+ArrayList a=new ArrayList()
+a.add("frg")
+log.info(a.get(0))
+
+//hashTable
+
+HashTable h=new HashTable()
+
+h.put("gb","jgjh")
+log.info(h.get("gb"))
+
+//map
+def n=["name":"soap","course":"soapui"]
+log.info("name")
+
+//list
+def l=[1,2,3,"gjh",4]
+log.info(l[0])
+
+
+//how to implement groovy in soapui:
+
+there are some variable like context, testrunner etc
+context only use in testcase label
+context.setProperty("name","shahid")
+context.getProperty("name")
+context.expand('$(#TestCase#Age)')
+def res=context.expand('$(GetEmployeeDetails#response))
+def xml=new XmlHolder(res)
+def des=xml.getNodeValue("//ns:name")
+def req=context.expand('$(DeleteEmployee#request)')
+def xmlReq=new XmlHolder(req)
+
+xmlReq.setNodeValue("//typ:name",des)
+def dxml=xmlReq.getXml()
+testRunner.TestCase.TestSteps("DeleteEmployee")setPropertyValue("Request",dxml)
+
+
+
+
+
+
+
+
+

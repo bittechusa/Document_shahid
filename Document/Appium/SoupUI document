@@ -1,0 +1,38 @@
+to get unique value:  in xpath--.count(xpath)
+to check node or tag name is present or not:  exists(xpath)
+to make it pass all the time like generate random number:
+then select wildcart-->put value *
+
+
+properties parameter:
+
+project label:
+select project there is tab in left hand corner:
+1.project properties
+2.custom properties
+
+we have to select custom properties:
+then right click on question mark --.getData--->projectProperties-->select source
+
+same way for test Suite and test case
+
+To get properties from outside from soupui like notepad :
+extention will be properties
+1.in left hand corner under custom properties there is button load properties click that then browse for file which u created then check both option then click ok
+
+#property transer:
+
+
+
+
+
+SoapUI Pro feature onle:
+dataSource
+datasourceLoop
+datasink
+conditionalgoto
+delay
+Test debugging
+test coverage
+test on demand(this is for to chech on cloud only uk and cicago but service has to be in web mean no local service mean local computer)
+

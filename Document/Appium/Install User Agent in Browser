@@ -1,0 +1,13 @@
+
+=============plugin user agent switcher===================
+
+1. Type user agent switcher in google
+2. Click add extention
+3. Click tools---> Select default user agent---> select user agent switcher---> options ---->click import----->choose file useragentswitcher.xml file from yr computer(provided below as well)---->finish
+
+This will give you more option for different devices
+
+
+=======To convert from browser mode to mobile mode to inspect element for mobile browser/web app;
+
+1. click tools----->Select Default user agent--->Mobile Devices--->devices--->apple or os--->select which platform using-----> version of simulator and browser as well

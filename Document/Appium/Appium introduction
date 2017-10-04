@@ -1,0 +1,24 @@
+Appium introduction:
+
+1.Why appium ?
+Ans: Reusability
+  open sourse mobile automation tool
+  cross platform(firefoxox,ios,android)
+  appium can automate native ,hybrid and web app.
+In where u can use which framework u can use :
+selendriord start from api label 4 to 16
+appium start from api label 17 t0 up and u can use this using selendriord as well.
+
+Appium architecture:
+1.appium build top of selenium webdriver.
+2.u can use most of the language.
+3.appium build in node.js(it has advantage node.js doesnt have sleep time) on other hand another server take every request to take 2 second and take two seceond sleep time
+4.selenium send request to appium through the json via protocol.
+5.appium track mobile devices.
+6.UIAutomato(google) for android and UIAutomation for Iphone both framework.
+7.UIAutomator and UIAutomation both has its own library.
+8.we can use same command for web and mobile
+9. dont need to recompile or modify to make it mobile compability
+10. can use any testing framework like junit and testng
+10.using UIAutomator library without appium .u have to use javascript only
+

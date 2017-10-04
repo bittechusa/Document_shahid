@@ -1,0 +1,16 @@
+
+==========Install appium mac==============
+
+1. Install xcode 
+	from app store
+
+2.check different simulator in xcode:
+	open xcode--->click window---->click devices
+
+3.Download Java
+
+4.Download Eclipse
+
+5. Install Appium Server
+
+6.Install Appium Jar(Java-clint)

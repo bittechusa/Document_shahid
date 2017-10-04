@@ -1,0 +1,19 @@
+How to get app package name andapp activity id which app does not have apk file:
+
+how to automate this kind of app: here are step below:
+
+1. first open that app means in home screen will be that app:
+2.connect device
+2.open terminal
+3. type adb shell //to  connect shell
+4. / $ dumsys window windows | grep -E 'mCurrentFocus|mFocusedApp'
+5. hit enter
+
+in result there will mCurrentFocus = one big line from there value will be two part which will be look like package(like com.gjgh.vhv)
+
+
+download indeed apk file from google
+
+
+responsive design means if any website change according to size
+user agent mean if it  not

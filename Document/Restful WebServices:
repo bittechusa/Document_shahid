@@ -1,0 +1,38 @@
+Restful WebServices:
+"REST". Representational State Transfer Rest is alternative to Soap Protocol Though SOAP is considered as the standard protocol for web services communication,it is not the only possible transport protocol which is used The WS-* extensions such as WS-Security, WS-Addressing, and WSReliableMessaging are associated with SOAP messaging due to this extensible nature
+
+RESTful web services can be considered as a lightweight alternative Rest is not a protocol
+
+Rest Service: 
+Resources
+We will use standard HTTp Methods to access the resources  They are GET, POST, DELETE, and PUT
+Rest follows Stateless Communication
+Get-Read
+Post:  Create                     logging into facebook….session is creating
+Resource identifier will not be passed from the URL.
+
+https://www.google.co.in/#output=search&sclient=psy-ab&q=soap+ui&oq=soap+ui&gs_l=hp.3..35i39l2j0i10l8.1355924.1357198.1.1358120.7.7.0.0.0.2.595.1901.0j4j1j1j0j1.7.0...0.0.0..1c.1.17.hp.lBRu9ejYP-A&bav=on.2,or.r_cp.r_qf.&bvm=bv.48293060,d.bmk&fp=5cf34bca7d914cb8&biw=1366&bih=667
+
+
+Create a Google account if you do not already have one.
+2. Access the Google Developers portal at https://developers.google.com/.
+3. Click on the API Console which can be found under the Developer Tools.
+4. Log into the API console (https://code.google.com/apis/console/)
+using your Google account.
+5. Click on Create project to start using Google APIs.
+6. You will find the list of Google API offerings such as Analytics API,
+Blogger API, Places API, and so on. For our demonstration, we will use
+Google Places API. Locate the Places API in the services list and click on
+the on/off icon to make it active.
+7. You will be prompted to register your organization and website URL.
+Enter something valid and click on Submit. This will direct you to the
+terms of services page. Accept the terms and conditions.
+8. Now, go to the API Access page by clicking on API Access in left menu.
+You will find your API key at the bottom of the page under the Simple
+API Access section.
+
+https://developers.google.com/places/documentation/
+
+
+serviceendpoint/resourceendpoint/output?parameters 
+

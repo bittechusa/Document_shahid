@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 3,
+      "title": "automation",
+      "author": "asad"
+    },
+    {
+      "id": 2,
+      "title": "tesing",
+      "author": "shahidul",
+      "info": {
+        "name": "raqib",
+        "phone": "1234"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

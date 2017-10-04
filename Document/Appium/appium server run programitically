@@ -1,0 +1,17 @@
+How to run appium programitacilly:
+
+To help od node.exe  we have to start appium.js file who is resposible to run appium server:
+
+node.exe take two parameter:
+first path of node.exe(is usauallu located in in appium folder)
+second pathos appium.js(locates appium>appium>node_modules>appium>bin>appium.js)
+
+1.open command prompt
+cd type both argument
+
+save both parameter command in notepad and save that bat file:
+
+
+main line:
+Runtime.getRuntime().exec("cmd /c start C:\appiumstart.bat")
+

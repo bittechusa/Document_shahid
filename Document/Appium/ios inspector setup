@@ -1,0 +1,7 @@
+How to setup appium inspector:
+
+1.click apple tag 
+2.select app path and provide app locations
+3.provide iphone version based on xcode simulator
+3.click launch appium first
+4.after run server then click inspector sign to invoke simulator and configure automaticly

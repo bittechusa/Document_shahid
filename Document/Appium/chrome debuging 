@@ -1,0 +1,20 @@
+******** How to enable remote debugging in android real device*******:
+
+settings--->about phone--->build number seven time
+then developer tab will appear--->usbdebugging
+
+
+if above does not work then:
+download oem usb driver based on device 
+
+** how to use chrome debugging tool to inspect element in android real device ***:
+
+in chrome browser click settings -->more tools--->inspect devices
+refresh browser
+make sure devices is connected
+
+open url from mobile
+click inspect
+now u will see screen
+click search
+then get xpath
